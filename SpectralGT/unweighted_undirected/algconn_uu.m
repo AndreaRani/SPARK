@@ -37,7 +37,7 @@ function [lambda, fiedv, label]= algconn_uu(mat, alpha, flag)
 % Ensure mat is binary
 mat = double(mat~=0);
 
-[~, symlap, ~]= normlapl_uu(mat, alpha);
+symlap= normlapl_uu(mat, alpha);
 
 [V D W]= eig(symlap);
 d= diag(D);

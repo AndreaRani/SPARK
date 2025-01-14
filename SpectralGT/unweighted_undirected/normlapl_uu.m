@@ -34,8 +34,8 @@ function normlapl= normlapl_uu(mat, alpha)
 % Ensure mat is binary
 mat = double(mat~=0);
 
-P= probt_ud(mat, alpha);
-statprob= stprob_ud(mat, alpha);
+P= probt_uu(mat, alpha);
+statprob= stprob_uu(mat, alpha);
 
 aux= diag(sqrt(statprob));
 aux2= diag(1./diag(aux));

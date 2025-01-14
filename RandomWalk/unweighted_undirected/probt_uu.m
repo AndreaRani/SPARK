@@ -39,7 +39,7 @@ function P= probt_uu(mat, alpha)
 mat = double(mat~=0);
 
 e= ones(size(mat, 1), 1);
-deg = sum(mat,2);
+deg = sum(mat,2)';
 a= ~(deg>0)';
 n= length(deg);
 
